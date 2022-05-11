@@ -72,7 +72,7 @@ This project contains tasks for learning to protect a user's personal data.
   + Implement a `hash_password` function that expects one string argument name password and returns a salted, hashed password, which is a byte string.
   + Use the `bcrypt` package to perform the hashing (with `hashpw`).
 
-+ [ ] 6. **Check valid password**<br/>[app.py](app.py) contains an `is_valid` function that expects 2 arguments and returns a boolean:
++ [x] 6. **Check valid password**<br/>[app.py](app.py) contains an `is_valid` function that expects 2 arguments and returns a boolean:
   + Arguments:
     + `hashed_password`: `bytes` type.
     + `password`: `str` type.
