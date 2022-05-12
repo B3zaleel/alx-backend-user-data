@@ -13,7 +13,7 @@ This project contains tasks for learning to protect a user's personal data.
   + The function should use a regex to replace occurrences of certain field values.
   + `filter_datum` should be less than 5 lines long and use `re.sub` to perform the substitution with a single regex.
 
-+ [ ] 1. **Log formatter**<br/>[filtered_logger.py](filtered_logger.py) contains the following updates:
++ [x] 1. **Log formatter**<br/>[filtered_logger.py](filtered_logger.py) contains the following updates:
   + Copy the following code into [filtered_logger.py](filtered_logger.py).
     ```python
     import logging
