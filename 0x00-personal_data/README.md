@@ -37,7 +37,7 @@ This project contains tasks for learning to protect a user's personal data.
   + Implement the `format` method to filter values in incoming log records using `filter_datum`. Values for fields in `fields` should be filtered.
   + DO NOT extrapolate `FORMAT` manually. The `format` method should be less than 5 lines long.
 
-+ [ ] 2. **Create logger**<br/>[filtered_logger.py](filtered_logger.py) contains
++ [x] 2. **Create logger**<br/>[filtered_logger.py](filtered_logger.py) contains
   + Use [user_data.csv](user_data.csv) for this task.
   + Implement a `get_logger` function that takes no arguments and returns a `logging.Logger` object.
   + The logger should be named `"user_data"` and only log up to `logging.INFO` level. It should not propagate messages to other loggers. It should have a `StreamHandler` with `RedactingFormatter` as formatter.
