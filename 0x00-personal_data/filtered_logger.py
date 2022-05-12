@@ -14,21 +14,6 @@ patterns = {
 PII_FIELDS = ("name", "email", "phone", "ssn", "password")
 
 
-def asc_time() -> str:
-    """Returns the current time.
-    """
-    cur_time = datetime.now()
-    cur_time_ms = cur_time.microsecond // 1000
-    return str('{},{}'.format(cur_time.strftime("%F %X"), cur_time_ms))
-
-
-def get_values(record: logging.LogRecord, msg: str) -> Tuple[str]:
-    """Retrieves values to be printed for a log record.
-    """
-    asctime = asc_time()
-    return (record.name, record.levelname, asctime, msg.replace(';', '; '))
-
-
 def filter_datum(
         fields: List[str], redaction: str, message: str, separator: str,
         ) -> str:
