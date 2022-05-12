@@ -5,8 +5,7 @@ import os
 import re
 import logging
 import mysql.connector
-from typing import List, Tuple
-from datetime import datetime
+from typing import List
 
 
 patterns = {
