@@ -132,7 +132,7 @@ This project contains tasks for learning to authenticate a user using the Basic 
     + Otherwise, return the user email and the user password - these 2 values must be separated by a `:`.
     + You can assume `decoded_base64_authorization_header` will contain only one `:`.
 
-+ [ ] 10. **Basic - User object**
++ [x] 10. **Basic - User object**
   + Add the method `def user_object_from_credentials(self, user_email: str, user_pwd: str) -> TypeVar('User'):` in the class `BasicAuth` in [api/v1/auth/basic_auth.py](api/v1/auth/basic_auth.py) that returns the `User` instance based on the user's email and password.
     + Return `None` if `user_email` is `None` or not a string.
     + Return `None` if `user_pwd` is `None` or not a string.
