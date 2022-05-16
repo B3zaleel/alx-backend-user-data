@@ -74,7 +74,7 @@ This project contains tasks for learning to authenticate a user using the Basic 
       + Public method `def current_user(self, request=None) -> TypeVar('User'):` that returns `None` - `request` will be the Flask request object.
     + This class is the template for all authentication system you will implement.
 
-+ [ ] 4. **Define which routes don't need authentication**
++ [x] 4. **Define which routes don't need authentication**
   + Update the method `def require_auth(self, path: str, excluded_paths: List[str]) -> bool:` in `Auth` in [api/v1/auth/auth.py](api/v1/auth/auth.py) that returns `True` if the path is not in the list of strings `excluded_paths`:
     + Returns `True` if path is `None`.
     + Returns `True` if `excluded_paths` is `None` or empty.
@@ -153,7 +153,7 @@ This project contains tasks for learning to authenticate a user using the Basic 
 + [ ] 12. **Basic - Allow password with ":"**
   + Improve the method `def extract_user_credentials(self, decoded_base64_authorization_header)` in [api/v1/auth/basic_auth.py](api/v1/auth/basic_auth.py) to allow password with `:`.
 
-+ [ ] 13. **Require auth with stars**
++ [x] 13. **Require auth with stars**
   + Improve `def require_auth(self, path, excluded_paths)` in [api/v1/auth/auth.py](api/v1/auth/auth.py) by allowing `*` at the end of excluded paths:
     + Example for `excluded_paths = ["/api/v1/stat*"]`:
       + `/api/v1/users` will return `True`.
