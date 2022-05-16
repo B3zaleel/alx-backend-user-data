@@ -3,7 +3,7 @@
 """
 import re
 from typing import List, TypeVar
-from flask import request as req
+from flask import request
 
 
 class Auth:
