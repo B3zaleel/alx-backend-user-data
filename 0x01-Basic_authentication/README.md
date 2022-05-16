@@ -103,7 +103,7 @@ This project contains tasks for learning to authenticate a user using the Basic 
 
 + [x] 6. **Basic auth**
   + Create a class `BasicAuth` in [api/v1/auth/basic_auth.py](api/v1/auth/basic_auth.py) that inherits from `Auth`. For the moment this class will be empty.
-  + Update [api/v1/app.py](api/v1/app.py) for using `BasicAuth` class instead of `Auth` depending of the value of the environment variable `AUTH_TYPE`, If `AUTH_TYPE` is equal to `basic_auth`:
+  + Update [api/v1/app.py](api/v1/app.py) for using `BasicAuth` class instead of `Auth` depending on the value of the environment variable `AUTH_TYPE`, If `AUTH_TYPE` is equal to `basic_auth`:
     + Import `BasicAuth` from `api.v1.auth.basic_auth`.
     + Create an instance of `BasicAuth` and assign it to the variable `auth`.
   + Otherwise, keep the previous mechanism with `auth` an instance of `Auth`.
