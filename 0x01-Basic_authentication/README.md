@@ -82,7 +82,7 @@ This project contains tasks for learning to authenticate a user using the Basic 
     + You can assume `excluded_paths` contains string path always ending by a `/`.
     + This method must be slash tolerant: `path=/api/v1/status` and `path=/api/v1/status/` must be returned `False` if `excluded_paths` contains `/api/v1/status/`.
 
-+ [ ] 5. **Request validation!**
++ [x] 5. **Request validation!**
   + Now you will validate all requests to secure the API.
   + Update the method `def authorization_header(self, request=None) -> str:` in [api/v1/auth/auth.py](api/v1/auth/auth.py):
     + If request is `None`, returns `None`.
