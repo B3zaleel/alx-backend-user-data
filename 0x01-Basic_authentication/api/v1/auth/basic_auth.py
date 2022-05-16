@@ -68,8 +68,6 @@ class BasicAuth(Auth):
         """Retrieves a user based on the user's authentication credentials.
         """
         if type(user_email) == str and type(user_pwd) == str:
-            if User.count() <= 0:
-                return None
             try:
                 users = User.search({'email': user_email})
             except Exception:
