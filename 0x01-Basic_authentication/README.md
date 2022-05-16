@@ -39,7 +39,7 @@ This project contains tasks for learning to authenticate a user using the Basic 
     bob@dylan:~$
     ```
 
-+ [ ] 1. **Error handler: Unauthorized**
++ [x] 1. **Error handler: Unauthorized**
   + Edit [api/v1/app.py](api/v1/app.py):
     + Add a new error handler for this status code, the response must be:
       + A JSON: `{"error": "Unauthorized"}`.
