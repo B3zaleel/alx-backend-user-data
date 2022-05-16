@@ -50,7 +50,7 @@ This project contains tasks for learning to authenticate a user using the Basic 
     + This endpoint must raise a 401 error by using `abort` - [Custom Error Pages](https://flask.palletsprojects.com/en/1.1.x/patterns/errorpages/).
   + By calling `abort(401)`, the error handler for 401 will be executed.
 
-+ [ ] 2. **Error handler: Forbidden**
++ [x] 2. **Error handler: Forbidden**
   + Edit [api/v1/app.py](api/v1/app.py):
     + Add a new error handler for this status code, the response must be:
       + A JSON: `{"error": "Forbidden"}`.
