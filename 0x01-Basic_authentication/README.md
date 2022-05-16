@@ -61,7 +61,7 @@ This project contains tasks for learning to authenticate a user using the Basic 
     + This endpoint must raise a 403 error by using `abort` - [Custom Error Pages](https://flask.palletsprojects.com/en/1.1.x/patterns/errorpages/).
   + By calling `abort(403)`, the error handler for 403 will be executed.
 
-+ [ ] 3. **Auth class**
++ [x] 3. **Auth class**
   + Create a class to manage the API authentication.
     + Create a folder [api/v1/auth](api/v1/auth).
     + Create an empty file [api/v1/auth/__init__.py](api/v1/auth/__init__.py).
