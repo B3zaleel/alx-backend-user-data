@@ -39,7 +39,7 @@ class BasicAuth(Auth):
                     validate=True,
                 )
                 return res.decode('utf-8')
-            except binascii.Error:
+            except (binascii.Error, UnicodeDecodeError):
                 return None
 
     def extract_user_credentials(
