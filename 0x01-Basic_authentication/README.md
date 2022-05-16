@@ -150,7 +150,7 @@ This project contains tasks for learning to authenticate a user using the Basic 
     + You must use `user_object_from_credentials`.
   + With this update, now your API is fully protected by a Basic Authentication. Enjoy!
 
-+ [ ] 12. **Basic - Allow password with ":"**
++ [x] 12. **Basic - Allow password with ":"**
   + Improve the method `def extract_user_credentials(self, decoded_base64_authorization_header)` in [api/v1/auth/basic_auth.py](api/v1/auth/basic_auth.py) to allow password with `:`.
 
 + [x] 13. **Require auth with stars**
