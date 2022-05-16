@@ -116,7 +116,7 @@ This project contains tasks for learning to authenticate a user using the Basic 
     + Otherwise, return the value after `Basic` (after the space).
     + You can assume `authorization_header` contains only one `Basic`.
 
-+ [ ] 8. **Basic - Base64 decode**
++ [x] 8. **Basic - Base64 decode**
   + Add the method `def decode_base64_authorization_header(self, base64_authorization_header: str) -> str:` in the class `BasicAuth` in [api/v1/auth/basic_auth.py](api/v1/auth/basic_auth.py) that returns the decoded value of a Base64 string `base64_authorization_header`:
     + Return `None` if `base64_authorization_header` is `None`.
     + Return `None` if `base64_authorization_header` is not a string.
