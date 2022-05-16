@@ -22,7 +22,7 @@ class BasicAuth(Auth):
             pattern = r'Basic (?P<token>.+)'
             field_match = re.fullmatch(pattern, authorization_header.strip())
             if field_match is not None:
-                return field_match.groups('token')[0]
+                return field_match.group('token')
         return None
 
     def decode_base64_authorization_header(
