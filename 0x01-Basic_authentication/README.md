@@ -140,7 +140,7 @@ This project contains tasks for learning to authenticate a user using the Basic 
     + Return `None` if `user_pwd` is not the password of the `User` instance found - you must use the method `is_valid_password` of `User`.
     + Otherwise, return the `User` instance.
 
-+ [ ] 11. **Basic - Overload current_user - and BOOM!**
++ [x] 11. **Basic - Overload current_user - and BOOM!**
   + Now, you have all the pieces for having a complete Basic authentication.
   + Add the method `def current_user(self, request=None) -> TypeVar('User')` in the class `BasicAuth` in [api/v1/auth/basic_auth.py](api/v1/auth/basic_auth.py) that overloads `Auth` and retrieves the `User` instance for a request:
     + You must use `authorization_header`.
