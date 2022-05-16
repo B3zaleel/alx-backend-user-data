@@ -108,7 +108,7 @@ This project contains tasks for learning to authenticate a user using the Basic 
     + Create an instance of `BasicAuth` and assign it to the variable `auth`.
   + Otherwise, keep the previous mechanism with `auth` an instance of `Auth`.
 
-+ [ ] 7. **Basic - Base64 part**
++ [x] 7. **Basic - Base64 part**
   + Add the method `def extract_base64_authorization_header(self, authorization_header: str) -> str:` in the class `BasicAuth` in [api/v1/auth/basic_auth.py](api/v1/auth/basic_auth.py) that returns the Base64 part of the `Authorization` header for a Basic Authentication:
     + Return None if `authorization_header` is `None`.
     + Return None if `authorization_header` is not a string.
