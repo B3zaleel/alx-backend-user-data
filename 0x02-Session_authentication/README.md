@@ -44,7 +44,7 @@ This project contains tasks for learning to authenticate a user through session 
     + The same `user_id` can have multiple Session ID - indeed, the `user_id` is the value in the dictionary `user_id_by_session_id`.
   + Now you an "in-memory" Session ID storing. You will be able to retrieve an `User` id based on a Session ID.
 
-+ [ ] 3. **User ID for Session ID**
++ [x] 3. **User ID for Session ID**
   + Update `SessionAuth` class:
   + Create an instance method `def user_id_for_session_id(self, session_id: str = None) -> str:` that returns a `User` ID based on a Session ID:
     + Return `None` if `session_id` is `None`.
