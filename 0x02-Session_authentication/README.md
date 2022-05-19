@@ -31,7 +31,7 @@ This project contains tasks for learning to authenticate a user through session 
     + Create an instance of `SessionAuth` and assign it to the variable auth
     Otherwise, keep the previous mechanism.
 
-+ [ ] 2. **Create a session**
++ [x] 2. **Create a session**
   + Update `SessionAuth` class:
     + Create a class attribute `user_id_by_session_id` initialized by an empty dictionary.
     + Create an instance method `def create_session(self, user_id: str = None) -> str:` that creates a Session ID for a `user_id`:
