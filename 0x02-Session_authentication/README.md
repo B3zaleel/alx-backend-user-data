@@ -92,7 +92,7 @@ This project contains tasks for learning to authenticate a user through session 
   + In the file [api/v1/views/__init__.py](api/v1/views/__init__.py), you must add this new view at the end of the file.
   + Now you have an authentication based on a Session ID stored in cookie, perfect for a website (browsers love cookies).
 
-+ [ ] 8. **Logout**
++ [x] 8. **Logout**
   + Update the class `SessionAuth` by adding a new method `def destroy_session(self, request=None):` that deletes the user session / logout:
     + If the `request` is equal to `None`, return `False`.
     + If the `request` doesn't contain the Session ID cookie, return `False` - you must use `self.session_cookie(request)`.
