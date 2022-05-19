@@ -4,7 +4,7 @@ This project contains tasks for learning to authenticate a user through session 
 
 ## Tasks To Complete
 
-+ [ ] 0. **Et moi et moi et moi!**
++ [x] 0. **Et moi et moi et moi!**
   + Copy all your work of the [0x06. Basic authentication](../0x01-Basic_authentication/) project in this new folder.
   + In this version, you implemented a **Basic authentication** for giving you access to all User endpoints:
     + `GET /api/v1/users`.
