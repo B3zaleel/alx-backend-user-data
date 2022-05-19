@@ -92,7 +92,7 @@ This project contains tasks for learning to authenticate a user through session 
   + In the file [api/v1/views/__init__.py](api/v1/views/__init__.py), you must add this new view at the end of the file.
   + Now you have an authentication based on a Session ID stored in cookie, perfect for a website (browsers love cookies).
 
-+ [ ] 8. **Logout**
++ [x] 8. **Logout**
   + Update the class `SessionAuth` by adding a new method `def destroy_session(self, request=None):` that deletes the user session / logout:
     + If the `request` is equal to `None`, return `False`.
     + If the `request` doesn't contain the Session ID cookie, return `False` - you must use `self.session_cookie(request)`.
@@ -101,7 +101,7 @@ This project contains tasks for learning to authenticate a user through session 
   + Update the file [api/v1/views/session_auth.py](api/v1/views/session_auth.py), by adding a new route `DELETE /api/v1/auth_session/logout`:
     + Slash tolerant.
     + You must use `from api.v1.app import auth`.
-    + You must use `auth.destroy_session(request)` for deleting the Session ID contains in the request as cookie:
+    + You must use `auth.destroy_session(request)` for deleting the Session ID contents in the request as cookie:
       + If `destroy_session` returns `False`, `abort(404)`.
       + Otherwise, return an empty JSON dictionary with the status code `200`.
 
