@@ -62,7 +62,7 @@ def authenticate_user():
             session_name_cookie = auth.session_cookie(request)
             user = auth.current_user(request)
             request.current_user = user
-            if auth_header is None and session_name_cookie is None:
+            if session_name_cookie is None:
                 abort(401)
             if auth_header is None:
                 abort(401)
