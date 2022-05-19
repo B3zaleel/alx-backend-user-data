@@ -60,7 +60,7 @@ This project contains tasks for learning to authenticate a user through session 
     + You must use `.get()` built-in for accessing the cookie in the request cookies dictionary.
     + You must use the environment variable `SESSION_NAME` to define the name of the cookie used for the Session ID.
 
-+ [x] 5. **Before request**
++ [ ] 5. **Before request**
   + Update the `@app.before_request` method in [api/v1/app.py](api/v1/app.py):
     + Add the URL path `/api/v1/auth_session/login/` in the list of excluded paths of the method `require_auth` - this route doesn't exist yet but it should be accessible outside authentication
     + If `auth.authorization_header(request)` and `auth.session_cookie(request)` return `None`, `abort(401)`
@@ -74,7 +74,7 @@ This project contains tasks for learning to authenticate a user through session 
     + By using this User ID, you will be able to retrieve a `User` instance from the database - you can use `User.get(...)` for retrieving a `User` from the database.
   + Now, you will be able to get a User based on his session ID.
 
-+ [x] 7. **New view for Session Authentication**
++ [ ] 7. **New view for Session Authentication**
   + Create a new Flask view that handles all routes for the Session authentication.
   + In the file [api/v1/views/session_auth.py](api/v1/views/session_auth.py), create a route `POST /auth_session/login` (= `POST /api/v1/auth_session/login`):
     + Slash tolerant (`/auth_session/login` == `/auth_session/login/`).
@@ -92,7 +92,7 @@ This project contains tasks for learning to authenticate a user through session 
   + In the file [api/v1/views/__init__.py](api/v1/views/__init__.py), you must add this new view at the end of the file.
   + Now you have an authentication based on a Session ID stored in cookie, perfect for a website (browsers love cookies).
 
-+ [x] 8. **Logout**
++ [ ] 8. **Logout**
   + Update the class `SessionAuth` by adding a new method `def destroy_session(self, request=None):` that deletes the user session / logout:
     + If the `request` is equal to `None`, return `False`.
     + If the `request` doesn't contain the Session ID cookie, return `False` - you must use `self.session_cookie(request)`.
