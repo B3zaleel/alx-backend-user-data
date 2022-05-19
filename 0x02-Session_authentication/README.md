@@ -74,7 +74,7 @@ This project contains tasks for learning to authenticate a user through session 
     + By using this User ID, you will be able to retrieve a `User` instance from the database - you can use `User.get(...)` for retrieving a `User` from the database.
   + Now, you will be able to get a User based on his session ID.
 
-+ [ ] 7. **New view for Session Authentication**
++ [x] 7. **New view for Session Authentication**
   + Create a new Flask view that handles all routes for the Session authentication.
   + In the file [api/v1/views/session_auth.py](api/v1/views/session_auth.py), create a route `POST /auth_session/login` (= `POST /api/v1/auth_session/login`):
     + Slash tolerant (`/auth_session/login` == `/auth_session/login/`).
