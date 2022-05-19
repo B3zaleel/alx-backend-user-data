@@ -53,7 +53,7 @@ This project contains tasks for learning to authenticate a user through session 
     + You must use `.get()` built-in for accessing in a dictionary a value based on key.
   + Now you have 2 methods (`create_session` and `user_id_for_session_id`) for storing and retrieving a link between a User ID and a Session ID.
 
-+ [ ] 4. **Session cookie**
++ [x] 4. **Session cookie**
   + Update [api/v1/auth/auth.py](api/v1/auth/auth.py) by adding the method `def session_cookie(self, request=None):` that returns a cookie value from a request:
     + Return `None` if `request` is `None`.
     + Return the value of the cookie named `_my_session_id` from `request` - the name of the cookie must be defined by the environment variable `SESSION_NAME`.
