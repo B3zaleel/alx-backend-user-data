@@ -105,7 +105,7 @@ This project contains tasks for learning to authenticate a user through session 
       + If `destroy_session` returns `False`, `abort(404)`.
       + Otherwise, return an empty JSON dictionary with the status code `200`.
 
-+ [ ] 9. **Expiration?**
++ [x] 9. **Expiration?**
   + Actually you have 2 authentication systems:
     + Basic authentication.
     + Session authentication.
