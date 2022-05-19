@@ -1,4 +1,6 @@
-
+#!/usr/bin/env python3
+"""Module of session authenticating views.
+"""
 import os
 from typing import Tuple
 from flask import abort, jsonify, request
