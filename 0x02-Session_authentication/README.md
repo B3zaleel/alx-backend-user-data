@@ -65,7 +65,7 @@ This project contains tasks for learning to authenticate a user through session 
     + Add the URL path `/api/v1/auth_session/login/` in the list of excluded paths of the method `require_auth` - this route doesn't exist yet but it should be accessible outside authentication
     + If `auth.authorization_header(request)` and `auth.session_cookie(request)` return `None`, `abort(401)`
 
-+ [ ] 6. **Use Session ID for identifying a User**
++ [x] 6. **Use Session ID for identifying a User**
   + Update `SessionAuth` class:
 
   + Create an instance method `def current_user(self, request=None):` (overload) that returns a `User` instance based on a cookie value:
