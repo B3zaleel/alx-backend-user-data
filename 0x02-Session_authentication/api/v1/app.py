@@ -58,16 +58,14 @@ def authenticate_user():
             "/api/v1/auth_session/login/",
         ]
         if auth.require_auth(request.path, excluded_paths):
-            auth_header = auth.authorization_header(request)
-            session_name_cookie = auth.session_cookie(request)
             user = auth.current_user(request)
-            request.current_user = user
-            if auth_header is None:
+            if auth.authorization_header(request) is None:
+                abort(401)
+            if auth.session_cookie(request) is None:
                 abort(401)
             if user is None:
                 abort(403)
-            if session_name_cookie is None:
-                abort(401)
+            request.current_user = user
 
 
 if __name__ == "__main__":
