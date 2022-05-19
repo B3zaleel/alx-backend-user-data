@@ -3,7 +3,7 @@
 """
 import os
 from typing import Tuple
-from flask import abort, jsonify, request
+from flask import abort, jsonify, request, session
 
 from models.user import User
 from api.v1.views import app_views
@@ -30,8 +30,9 @@ def login() -> Tuple[str, int]:
         return jsonify(not_found_res), 404
     if users[0].is_valid_password(password):
         from api.v1.app import auth
-        sessiond_id = auth.create_session(getattr(users[0], 'id'))
+        session_id = auth.create_session(getattr(users[0], 'id'))
         res = jsonify(users[0].to_json())
-        res.set_cookie(os.getenv("SESSION_NAME"), sessiond_id)
+        session[os.getenv("SESSION_NAME")] = session_id
+        # res.set_cookie(os.getenv("SESSION_NAME"), session_id)
         return res
     return jsonify({ "error": "wrong password" }), 401
