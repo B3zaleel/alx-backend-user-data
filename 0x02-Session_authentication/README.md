@@ -22,11 +22,11 @@ This project contains tasks for learning to authenticate a user through session 
       + If `<user_id>` is equal to `me` and `request.current_user` is not `None`: return the authenticated `User` in a JSON response (like a normal case of `GET /api/v1/users/<user_id>` where `<user_id>` is a valid `User` ID)
       + Otherwise, keep the same behavior.
 
-+ [ ] 1. **Empty session**
++ [x] 1. **Empty session**
   + Create a class `SessionAuth` in [api/v1/auth/session_auth.py](api/v1/auth/session_auth.py) that inherits from `Auth`. For the moment this class will be empty. It's the first step for creating a new authentication mechanism:
     + Validate if everything inherits correctly without any overloading.
     + Validate the "switch" by using environment variables.
-  + Update [api/v1/app.py](api/v1/app.py) for using `SessionAuth` instance for the variable `auth` depending of the value of the environment variable `AUTH_TYPE`, If `AUTH_TYPE` is equal to `session_auth`:
+  + Update [api/v1/app.py](api/v1/app.py) for using `SessionAuth` instance for the variable `auth` depending on the value of the environment variable `AUTH_TYPE`, If `AUTH_TYPE` is equal to `session_auth`:
     + Import `SessionAuth` from [api.v1.auth.session_auth](api.v1.auth.session_auth)
     + Create an instance of `SessionAuth` and assign it to the variable auth
     Otherwise, keep the previous mechanism.
