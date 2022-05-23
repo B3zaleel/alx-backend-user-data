@@ -16,7 +16,7 @@ AUTH = Auth()
 def index() -> str:
     """GET /
     Return:
-        - the welcome page.
+        - The home page's payload.
     """
     return jsonify({"message": "Bienvenue"})
 
