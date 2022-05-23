@@ -112,7 +112,7 @@ This project contains tasks for learning to create a user authentication service
     and return a 400 status code.
   + Remember that you should only use `AUTH` in this app. `DB` is a lower abstraction that is proxied by `Auth`.
 
-+ [ ] 8. **Credentials validation**<br />[auth.py](auth.py) contains the following updates:
++ [x] 8. **Credentials validation**<br />[auth.py](auth.py) contains the following updates:
   + Implement the `Auth.valid_login` method. It should expect `email` and `password` required arguments and return a boolean.
   + Try locating the user by email. If it exists, check the password with `bcrypt.checkpw`. If it matches return `True`. In any other case, return `False`.
 
