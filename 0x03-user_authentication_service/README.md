@@ -63,7 +63,7 @@ This project contains tasks for learning to create a user authentication service
 
 + [x] 4. **Hash password**<br />[auth.py](auth.py) contains a `_hash_password` method that takes in a password string arguments and returns bytes, which is a salted hash of the input password, hashed with `bcrypt.hashpw`.
 
-+ [ ] 5. **Register user**<br />[auth.py](auth.py) contains the following updates:
++ [x] 5. **Register user**<br />[auth.py](auth.py) contains the following updates:
   + Implement the `Auth.register_user` in the `Auth` class provided below:
     ```python
     from db import DB
