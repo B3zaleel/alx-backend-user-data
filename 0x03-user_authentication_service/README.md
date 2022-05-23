@@ -92,7 +92,7 @@ This project contains tasks for learning to create a user authentication service
         app.run(host="0.0.0.0", port="5000")
     ```
 
-+ [ ] 7. **Register user**<br />[app.py](app.py) contains the following updates:
++ [x] 7. **Register user**<br />[app.py](app.py) contains the following updates:
   + Implement the end-point to register a user. Define a `users` function that implements the `POST /users` route.
   + Import the `Auth` object and instantiate it at the root of the module as such:
     ```python
