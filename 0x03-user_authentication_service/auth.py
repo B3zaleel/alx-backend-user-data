@@ -2,6 +2,7 @@
 """A module for authentication-related routines.
 """
 import bcrypt
+from uuid import uuid4
 from sqlalchemy.exc import NoResultFound
 
 from db import DB
@@ -12,6 +13,12 @@ def _hash_password(password: str) -> bytes:
     """Hashes a password.
     """
     return bcrypt.hashpw(password.encode("utf-8"), bcrypt.gensalt())
+
+
+def _generate_uuid() -> str:
+    """Generates a UUID.
+    """
+    return str(uuid4())
 
 
 class Auth:

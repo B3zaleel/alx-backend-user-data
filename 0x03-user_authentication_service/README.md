@@ -116,7 +116,7 @@ This project contains tasks for learning to create a user authentication service
   + Implement the `Auth.valid_login` method. It should expect `email` and `password` required arguments and return a boolean.
   + Try locating the user by email. If it exists, check the password with `bcrypt.checkpw`. If it matches return `True`. In any other case, return `False`.
 
-+ [ ] 9. **Generate UUIDs**<br />[auth.py](auth.py) contains the following updates:
++ [x] 9. **Generate UUIDs**<br />[auth.py](auth.py) contains the following updates:
   + Implement a `_generate_uuid` function in the `auth` module. The function should return a string representation of a new UUID. Use the `uuid` module.
   + Note that the method is private to the `auth` module and should **NOT** be used outside of it.
 
