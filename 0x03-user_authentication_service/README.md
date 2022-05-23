@@ -81,7 +81,7 @@ This project contains tasks for learning to create a user authentication service
   + If a user already exist with the passed `email`, raise a `ValueError` with the message `User <user's email> already exists`.
   + If not, hash the password with `_hash_password`, save the user to the database using `self._db` and return the `User` object.
 
-+ [ ] 6. **Basic Flask app**<br />[app.py](app.py) contains a basic Flask app with the following requirements:
++ [x] 6. **Basic Flask app**<br />[app.py](app.py) contains a basic Flask app with the following requirements:
   + Create a Flask app that has a single `GET` route (`"/"`) and use `flask.jsonify` to return a JSON payload of the form:
     ```json
     {"message": "Bienvenue"}
