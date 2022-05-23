@@ -12,7 +12,7 @@ class User(Base):
     """Represents a record from the `user` table.
     """
     __tablename__ = "users"
-    id = Column(Integer, primary_key=True, nullable=False)
+    id = Column(Integer, primary_key=True)
     email = Column(String, nullable=False)
     hashed_password = Column(String, nullable=False)
     session_id = Column(String, nullable=True)
