@@ -10,7 +10,7 @@ CORS(app, resources={r"/*": {"origins": "*"}})
 
 
 @app.route('/', methods=['GET'], strict_slashes=False)
-def status() -> str:
+def index() -> str:
     """GET /
     Return:
         - the welcome page.
