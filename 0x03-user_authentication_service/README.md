@@ -149,7 +149,7 @@ This project contains tasks for learning to create a user authentication service
   + The request is expected to contain the session ID as a cookie with key `"session_id"`.
   + Find the user with the requested session ID. If the user exists destroy the session and redirect the user to `GET /`. If the user does not exist, respond with a 403 HTTP status.
 
-+ [ ] 15. **User profile**<br />[app.py](app.py) contains the following updates:
++ [x] 15. **User profile**<br />[app.py](app.py) contains the following updates:
   + Implement a `profile` function to respond to the `GET /profile` route.
   + The request is expected to contain a `session_id` cookie. Use it to find the user. If the user exist, respond with a 200 HTTP status and the following JSON payload:
     ```json
