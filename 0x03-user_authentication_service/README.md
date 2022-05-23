@@ -125,7 +125,7 @@ This project contains tasks for learning to create a user authentication service
   + The method should find the user corresponding to the email, generate a new UUID and store it in the database as the user’s `session_id`, then return the session ID.
   + Remember that only public methods of `self._db` can be used.
 
-+ [ ] 11. **Log in**<br />[app.py](app.py) contains the following updates:
++ [x] 11. **Log in**<br />[app.py](app.py) contains the following updates:
   + Implement a `login` function to respond to the `POST /sessions` route.
   + The request is expected to contain form data with `"email"` and a `"password"` fields.
   + If the login information is incorrect, use `flask.abort` to respond with a 401 HTTP status.
