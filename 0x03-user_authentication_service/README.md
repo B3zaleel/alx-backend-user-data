@@ -61,7 +61,7 @@ This project contains tasks for learning to create a user authentication service
   + The method will use `find_user_by` to locate the user to update, then will update the user’s attributes as passed in the method’s arguments then commit changes to the database.
   + If an argument that does not correspond to a user attribute is passed, raise a `ValueError`.
 
-+ [ ] 4. **Hash password**<br />[auth.py](auth.py) contains a `_hash_password` method that takes in a password string arguments and returns bytes, which is a salted hash of the input password, hashed with `bcrypt.hashpw`.
++ [x] 4. **Hash password**<br />[auth.py](auth.py) contains a `_hash_password` method that takes in a password string arguments and returns bytes, which is a salted hash of the input password, hashed with `bcrypt.hashpw`.
 
 + [ ] 5. **Register user**<br />[auth.py](auth.py) contains the following updates:
   + Implement the `Auth.register_user` in the `Auth` class provided below:
