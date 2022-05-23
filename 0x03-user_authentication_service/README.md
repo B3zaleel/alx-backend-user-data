@@ -134,7 +134,7 @@ This project contains tasks for learning to create a user authentication service
     {"email": "<user email>", "message": "logged in"}
     ```
 
-+ [ ] 12. **Find user by session ID**<br />[auth.py](auth.py) contains the following updates:
++ [x] 12. **Find user by session ID**<br />[auth.py](auth.py) contains the following updates:
   + Implement the `Auth.get_user_from_session_id` method. It takes a single `session_id` string argument and returns the corresponding `User` or `None`.
   + If the session ID is `None` or no user is found, return `None`. Otherwise return the corresponding user.
   + Remember to only use public methods of `self._db`.
