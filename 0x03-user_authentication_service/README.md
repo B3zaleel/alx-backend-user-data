@@ -12,7 +12,7 @@ This project contains tasks for learning to create a user authentication service
     + `session_id`, a nullable string.
     + `reset_token`, a nullable string.
 
-+ [ ] 1. **create user**<br />[db.py](db.py) contains a completion of the `DB` class provided below to implement the `add_user` method according to the given requirements:
++ [x] 1. **create user**<br />[db.py](db.py) contains a completion of the `DB` class provided below to implement the `add_user` method according to the given requirements:
   + &nbsp;
     ```python
     #!/usr/bin/env python3
