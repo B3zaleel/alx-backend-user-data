@@ -31,7 +31,7 @@ class DB:
             self.__session = DBSession()
         return self.__session
 
-    def add_user(self, email, hashed_password):
+    def add_user(self, email: str, hashed_password: str) -> User:
         """Adds a new user to the database.
         """
         session = self._session
@@ -40,7 +40,7 @@ class DB:
         session.commit()
         return new_user
 
-    def find_user_by(self, **kwargs):
+    def find_user_by(self, **kwargs) -> User:
         """Finds a user based on a set of filters.
         """
         session = self._session
@@ -58,7 +58,7 @@ class DB:
             raise NoResultFound()
         return result
 
-    def update_user(self, user_id: str, **kwargs) -> None:
+    def update_user(self, user_id: int, **kwargs) -> None:
         """Updates a user based on a given id.
         """
         session = self._session
