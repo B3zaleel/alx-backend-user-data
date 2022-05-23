@@ -174,7 +174,7 @@ This project contains tasks for learning to create a user authentication service
   + Use the `reset_token` to find the corresponding user. If it does not exist, raise a `ValueError` exception.
   + Otherwise, hash the password and update the user’s `hashed_password` field with the new hashed password and the `reset_token` field to `None`.
 
-+ [ ] 19. **Update password end-point**<br />[app.py](app.py) contains the following updates:
++ [x] 19. **Update password end-point**<br />[app.py](app.py) contains the following updates:
   + Implement the `update_password` function in the `app` module to respond to the `PUT /reset_password` route.
   + The request is expected to contain form data with fields `"email"`, `"reset_token"` and `"new_password"`.
   + Update the password. If the token is invalid, catch the exception and respond with a 403 HTTP code.
