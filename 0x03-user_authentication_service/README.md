@@ -183,7 +183,7 @@ This project contains tasks for learning to create a user authentication service
     {"email": "<user email>", "message": "Password updated"}
     ```
 
-+ [ ] 20. **End-to-end integration test**
++ [x] 20. **End-to-end integration test**
   + Start the Flask app you created in the previous tasks. Open a new terminal window.
   + Create a new module called [main.py](main.py). Create one function for each of the following sub tasks. Use the `requests` module to query your web server for the corresponding end-point. Use `assert` to validate the response’s expected status code and payload (if any) for each sub task:
     + `register_user(email: str, password: str) -> None`.
