@@ -50,7 +50,7 @@ This project contains tasks for learning to create a user authentication service
   + Note that `DB._session` is a private property and hence should NEVER be used from outside the DB class.
   + Implement the `add_user` method, which has two required string arguments: `email` and `hashed_password`, and returns a `User` object. The method should save the user to the database. No validations are required at this stage.
 
-+ [ ] 2. **Find user**<br />[db.py](db.py) contains the following updates:
++ [x] 2. **Find user**<br />[db.py](db.py) contains the following updates:
   + Implement the `DB.find_user_by` method. This method takes in arbitrary keyword arguments and returns the first row found in the `users` table as filtered by the method’s input arguments. No validation of input arguments required at this point.
   + Make sure that SQLAlchemy’s `NoResultFound` and `InvalidRequestError` are raised when no results are found, or when wrong query arguments are passed, respectively.
   + **Warning:**
