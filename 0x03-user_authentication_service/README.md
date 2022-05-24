@@ -2,6 +2,13 @@
 
 This project contains tasks for learning to create a user authentication service.
 
+## Requirements
+
++ SQLAlchemy 1.3.x
++ pycodestyle 2.5
++ bcrypt
++ python3 3.7
+
 ## Tasks To Complete
 
 + [x] 0. **User model**<br />[user.py](user.py) contains a SQLAlchemy model named `User` for a database table named `users` (by using the [mapping declaration](https://docs.sqlalchemy.org/en/13/orm/tutorial.html#declare-a-mapping) of SQLAlchemy) and meets the following requirements:
