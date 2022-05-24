@@ -34,11 +34,12 @@ class DB:
     def add_user(self, email: str, hashed_password: str) -> User:
         """Adds a new user to the database.
         """
-        session = self._session
-        new_user = User(email=email, hashed_password=hashed_password)
-        session.add(new_user)
-        session.commit()
-        return new_user
+        if type(email) == str and type(hashed_password) == str:
+            session = self._session
+            new_user = User(email=email, hashed_password=hashed_password)
+            session.add(new_user)
+            session.commit()
+            return new_user
 
     def find_user_by(self, **kwargs) -> User:
         """Finds a user based on a set of filters.
