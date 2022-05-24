@@ -35,13 +35,7 @@ class DB:
         """Adds a new user to the database.
         """
         try:
-            pwd = hashed_password
-            if type(hashed_password) == bytes:
-                pwd = hashed_password.decode("utf-8")
-            new_user = User(
-                email=email,
-                hashed_password=pwd,
-            )
+            new_user = User(email=email, hashed_password=hashed_password)
             self._session.add(new_user)
             self._session.commit()
         except Exception:
